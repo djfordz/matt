@@ -1,0 +1,302 @@
+﻿/*
+* Reset some basic elements
+*/
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+* Basic styling
+*/
+body {
+    font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #ecf0f1;
+    background-color: #2c3e50;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+h1 {
+    font-size: 1.75em; 
+    line-height: 1.5em;
+}
+h2 {
+    font-size: 1.65em;
+    line-heightL 1.00em;
+}
+h3 {
+    font-size: 1.45em;
+    line-height: 1.20em;
+}
+h4 {
+    font-size: 1.25em;
+    font-weight: 600;
+    line-height: 1.55em;
+}
+h5 {
+    font-size: 1.15em;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+h6 {
+    font-size: .80em;
+    font-weight: bold;
+    line-height: 1.10em;
+}
+ul {
+    list-style: none;
+}
+li {
+    color: #ecf0f1;
+}
+li p, li h3 {
+    color: #ecf0f1;
+}
+a {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 18px;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:visited {
+    color: #2980b9;
+ }
+hr {
+    max-width: 375px;
+    text-align: center;
+    margin: 0 auto;
+}
+.em, sup {
+    color: #e74c3c;
+}
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+.highlight {
+    margin-bottom: 15px;
+}
+/*
+ * Blockquotes
+ */
+.quote-container {
+    margin: 20px auto;
+    width: 40%;
+}
+blockquote {
+	color: #828282;
+	border-left: 4px solid #e8e8e8;
+	padding-left: 15px;
+	font-size: 18px;
+	letter-spacing: -1px;
+	font-style: italic; 
+}
+/*
+ * Buttons
+ */
+.btn-default {
+     margin: 5px;
+     width: 80px;
+     height: 80px;
+     background-color: #e74c3c;
+     color: #222222;
+     font-size: 32px;
+     border-radius: 50%;
+ }
+.btn-default:hover {
+     background-color: #3498DB;
+ }
+button.active {
+	color: #ecf0f1;
+}
+#submit {
+    width: 75px;
+}
+/*
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 400; 
+}
+.title h1 {
+	font-size: 2em;
+	color: #ECF0F1;
+	margin-top: -12px;
+}
+/*
+ * Wrapper
+ */
+.wrapper {
+	max-width: 740px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 30px;
+	padding-left: 30px; 
+}
+/*
+ * Site header
+ */
+.site-header {
+	margin-top: 40px;
+	min-height: 56px;
+	position: relative; 
+}
+.page-title {
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 2em;
+	letter-spacing: -1px;
+    margin-top: 40px;
+	margin-bottom: 0;
+    text-align: center;
+    color: #ECF0F1;
+
+} 
+.site-nav {
+    text-align: center;
+    line-height: 1.5em; 
+}
+
+/*
+ * Sections
+ */
+
+ .container {
+     max-width: 90%;
+     margin: 20px auto 10px auto;
+     height: auto;
+     padding: 15px;
+ }
+ .inner-container {
+     max-width: 248px;
+     height: auto;
+     margin: 50px auto;
+ }
+ .inner-container img {
+     margin: 0 auto 0 auto;
+     width: 100%;
+     text-align: center;
+ }
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto 0 auto;
+}
+.col-3 {
+    flex: 0 1 auto;
+    display: inline-block;
+	width: 350px;
+	padding: 5px;
+	
+}
+.right {
+    order: 2;
+}
+.middle {
+    order: 2;
+}
+.left {
+    order: 1;
+}
+.col-1 {
+    flex: 0 1 auto;
+    width: 60%;
+    margin: 60px auto;
+    height: auto;
+    padding 10px;
+}
+.col-1 p:first-letter {
+    font-size: 22px;
+}
+.title {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	border-bottom: 2px solid #e74c3c;
+}
+.content {
+	padding: 13px;
+}
+ 
+/*
+ * Slideshow
+ */
+.show-container {
+	width: 100%;
+	margin: 60px 0 0 0;
+    padding: 20px;
+}
+.slideshow {
+    width: 60%;
+    margin: 0 auto;
+	position: relative;
+	display: block;
+	overflow: hidden;
+}
+
+figure {
+	position: absolute;
+	opacity: 0;
+	transition: 1s opacity;
+}
+figcaption {
+	position: absolute;
+    text-align: center;
+	font-family: sans-serif;
+	font-size: .8em;
+	bottom: 1.0em;
+	right: 40%;
+	padding: .25em;
+	color: #fff;
+	background: rgba(0,0,0, .55);
+	border-radius: 2px;
+}
+figcaption a {
+	color: #fff;
+}
+figure.show {
+	opacity: 1;
+		position: static;
+	transition: 1s opacity;
+}
+figure.show img {
+	width: 100%;
+}
+
+/*
+ * Tables
+ */
+
+table {
+    width: 100%;
+    text-align: center;
+}
+th {
+    border-bottom: 2px solid #e74c3c;
+}
+
+@media (max-width: 640px) {
+    .quote-container {
+        width: 100%;
+    }
+    .slideshow {
+        width: 100%;
+    }
+    .col-1 {
+        width: 100%;
+    }
+}
+@media (min-width: 299px) and (max-width: 433px) {
+    .wrapper {
+        width: 65%;
+    }
+}
+
