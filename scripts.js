@@ -70,7 +70,7 @@ btn.forEach(function(v, i) {
     var page = window.location.href;
     if(page.search('humor.html') > 0) {
         
-       var count = 0; 
+       var count = 1; 
        //show first slide immediately on page load.
         slides[count].classList.add('show');
 
@@ -84,7 +84,7 @@ btn.forEach(function(v, i) {
             });
             slides[count].classList.add('show');
             count++;
-        }, 7000);
+        }, 3000);
     }
     
 })();
